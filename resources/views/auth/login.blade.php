@@ -51,14 +51,12 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <a href="{{ url('login/google') }}"><button class="btn btn-primary">
-                                    login with Google
-                                </button></a>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+                                    <button class="btn btn-primary">
+                                        <a href="{{ url('login/google') }}">login with Google</a>
+                                        </button>
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
