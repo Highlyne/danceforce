@@ -35,9 +35,17 @@ return [
     ],
 
     'google' => [
-        'client_id' => env(GOOGLE_CLIENT_ID),
-        'client_secret' => env(GOOGLE_SECRET),
-        'redirect' => env(GOOGLE_CALLBACK_URL),
-    ]
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_CALLBACK_URL'),
+    ],
+
+    'twitch' => [
+        'client_id' => env('TWITCH_KEY'),
+        'client_secret' => env('TWITCH_SECRET'),
+        'redirect' => env('TWITCH_REDIRECT_URI'),
+    ],
+
+    
 
 ];

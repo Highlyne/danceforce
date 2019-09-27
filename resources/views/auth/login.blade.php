@@ -57,6 +57,9 @@
                                     <button class="btn btn-primary">
                                         <a href="{{ url('login/google') }}">login with Google</a>
                                         </button>
+                                        <button class="btn btn-primary">
+                                                <a href="{{ url('login/twitch') }}">login with twitch</a>
+                                                </button>
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
