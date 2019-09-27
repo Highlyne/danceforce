@@ -57,6 +57,9 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('google')->user();
 
+        Auth::login($user, true);
+
         // $user->token;
+        return redirect($this->redirectTo);
     }
 }
