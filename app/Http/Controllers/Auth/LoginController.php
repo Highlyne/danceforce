@@ -57,9 +57,8 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('google')->user();
 
-        
 
         // $user->token;
-        return view('home');
+        return view('home', compact('user'));
     }
 }

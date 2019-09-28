@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!  Good &#x1F3B3;
+                    You are logged in!  Good {{$user}}
                 </div>
             </div>
         </div>
