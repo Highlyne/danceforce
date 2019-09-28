@@ -80,7 +80,7 @@ class LoginController extends Controller
      */
     public function handleProviderTwitch()
     {
-        $user = Socialite::driver('twitch')->user();
+        $user = Socialite::driver('Twitch')->user();
 
         
 
