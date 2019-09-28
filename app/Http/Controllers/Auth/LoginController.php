@@ -70,7 +70,7 @@ class LoginController extends Controller
      */
     public function redirectToTwitch()
     {
-        return Socialite::driver('twitch')->redirect();
+        return Socialite::driver('Twitch')->redirect();
     }
 
     /**
