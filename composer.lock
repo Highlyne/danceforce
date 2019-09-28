@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7071139d766c936a4f0ee83ef96c177b",
+    "content-hash": "c2d66715ca71ea57e84ab7bcbe171c16",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1910,43 +1910,6 @@
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
             "time": "2019-09-09T03:07:52+00:00"
-        },
-        {
-            "name": "socialiteproviders/twitch",
-            "version": "v5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SocialiteProviders/Twitch.git",
-                "reference": "8c19b26ff24c40cc019413042a5492c5ed21a658"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/Twitch/zipball/8c19b26ff24c40cc019413042a5492c5ed21a658",
-                "reference": "8c19b26ff24c40cc019413042a5492c5ed21a658",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~2.0 || ~3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocialiteProviders\\Twitch\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Faust",
-                    "email": "hello@brianfaust.de"
-                }
-            ],
-            "description": "Twitch OAuth2 Provider for Laravel Socialite",
-            "time": "2018-06-20T10:59:51+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

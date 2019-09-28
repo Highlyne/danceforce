@@ -62,29 +62,4 @@ class LoginController extends Controller
         // $user->token;
         return view('home');
     }
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    /**
-     * Redirect the user to the Twitch authentication page.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function redirectToTwitch()
-    {
-        return Socialite::driver('Twitch')->redirect();
-    }
-
-    /**
-     * Obtain the user information from Twitch.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function handleProviderTwitch()
-    {
-        $user = Socialite::driver('Twitch')->user();
-
-        
-
-        // $user->token;
-        return view('home');
-    }
 }
