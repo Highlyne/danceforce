@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // =========== 3 Party Login ======== 
 Route::get('login/google', 'Auth\LoginController@redirectToProvider');
-Route::get('login/twitch', 'Auth\LoginController@redirectToProvider');
+Route::get('login/twitch', 'Auth\LoginController@redirectToTwitch');
 Route::get('https://danceforce.herokuapp.com/login/google/callback', 'Auth\LoginController@handleProviderCallback');
-Route::get('https://danceforce.herokuapp.com/login/twitch/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('https://danceforce.herokuapp.com/login/twitch/callback', 'Auth\LoginController@handleProviderTwitch');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');

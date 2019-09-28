@@ -39,23 +39,48 @@ class LoginController extends Controller
     }
 
     /**
-     * Redirect the user to the GitHub authentication page.
+     * Redirect the user to the Google authentication page.
      *
      * @return \Illuminate\Http\Response
      */
-    public function redirectToProvider($provider)
+    public function redirectToProvider()
     {
-        return Socialite::driver($provider)->redirect();
+        return Socialite::driver('google')->redirect();
     }
 
     /**
-     * Obtain the user information from GitHub.
+     * Obtain the user information from Google.
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback($provider)
+    public function handleProviderCallback()
     {
-        $user = Socialite::driver($provider)->user();
+        $user = Socialite::driver('google')->user();
+
+        
+
+        // $user->token;
+        return view('home');
+    }
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    /**
+     * Redirect the user to the Twitch authentication page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function redirectToTwitch()
+    {
+        return Socialite::driver('twitch')->redirect();
+    }
+
+    /**
+     * Obtain the user information from Twitch.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function handleProviderTwitch()
+    {
+        $user = Socialite::driver('twitch')->user();
 
         
 

@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!  Good &#x1F3B3;
                 </div>
             </div>
         </div>
